@@ -30,7 +30,7 @@ const App = () => {
             across the country. Our experts combine form and function in
             bringing your vision to life. Create a room in your own style with
             our collection and make your property a reflection of you and what
-            you love.
+            you love
           </p>
           <button className="flex items-center hover:fill-gray-600 hover:text-gray-600">
             <span className="text-base font-bold uppercase tracking-[1.2rem]">
