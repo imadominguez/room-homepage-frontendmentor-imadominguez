@@ -7,5 +7,5 @@
     <li><h3>Tailwind CSS</h3></li>
 </ul>
 
--   [preview proyect](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq)
+-   [Challenge proyect](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq)
 -   [live proyect](https://room-homepage-imadominguez.netlify.app/)
