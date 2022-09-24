@@ -11,19 +11,14 @@ const NavbarMain = () => {
         "absolute top-6 flex w-full items-center px-8 lg:text-white";
     const closeMenuClass =
         "absolute top-6 flex w-full items-center bg-white px-8 text-black py-4 lg:py-0 justify-between lg:justify-start lg:bg-transparent";
+    const navBrandActive =
+        "mx-auto mb-3 pr-[20px] text-4xl text-white lg:mx-0 lg:block lg:pr-16";
+    const navBrandInactive = "hidden";
+    const navLinksActive = "flex gap-8 lg:flex lg:gap-4 lg:text-white";
+    const navLinksInactive = "hidden lg:flex lg:gap-4 lg:text-white";
 
     const handleClickMenu = () => {
         setActiveMenu(!activeMenu);
-
-        // console.log(refNavbar.current.querySelector("#navLinks"));
-
-        refNavbar.current.querySelector("#navLinks").classList.toggle("hidden");
-
-        refNavbar.current
-            .querySelector("#navLinks")
-            .classList.add("flex", "gap-8");
-
-        refNavbar.current.querySelector("#navBrand").classList.toggle("hidden");
     };
 
     return (
@@ -35,16 +30,12 @@ const NavbarMain = () => {
                 {activeMenu ? <IconMenuClose /> : <IconMenuOpen />}
             </button>
             <a
-                id="navBrand"
                 href="#"
-                className="mx-auto mb-3 pr-[20px] text-4xl text-white lg:mx-0 lg:block lg:pr-16"
+                className={activeMenu ? navBrandInactive : navBrandActive}
             >
                 room
             </a>
-            <div
-                className="hidden lg:flex lg:gap-4 lg:text-white "
-                id="navLinks"
-            >
+            <div className={activeMenu ? navLinksActive : navLinksInactive}>
                 <NavLink text="home" />
                 <NavLink text="shop" />
                 <NavLink text="about" />
@@ -55,3 +46,5 @@ const NavbarMain = () => {
 };
 
 export default NavbarMain;
+
+("");
